@@ -21,7 +21,9 @@
 </head>
 
 <body>
-
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
     <!-- Start your project here-->
     <!-- Navbar -->
     <div class='navbar'>
@@ -56,7 +58,9 @@
                 </div>
             </div>
         </nav>
+        <div class="progress-bar fixed-top" id="myBar"></div>
     </div>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
 
 
     
@@ -230,6 +234,12 @@
     <script type="text/javascript"></script>
     <script src="js/custom.js"></script>
     <!-- Custom scripts -->
+    <script>
+        setTimeout(function() {
+            $('.loader_bg').fadeToggle();
+        }, 3500);
+        
+    </script>
     <script>
         // Animation init
         new WOW().init();
