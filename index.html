@@ -20,7 +20,9 @@
 </head>
 
 <body>
-
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
   <!-- Start your project here-->
   <!-- Navbar -->
   <div class='navbar'>
@@ -588,6 +590,12 @@
   <script type="text/javascript"></script>
   <script src="js/custom.js"></script>
   <!-- Custom scripts -->
+   <script>
+     setTimeout(function () {
+       $('.loader_bg').fadeToggle();
+     }, 3500);
+   </script>
+  
   <script>
     // Animation init
     new WOW().init();
