@@ -65,7 +65,7 @@ nav {
 
 .navbar {
     padding: .1rem;
-    background-color: #6c5ce7;
+    background-color: #103f6d;
 
 
 }
@@ -123,7 +123,7 @@ active {
     width: 100%;
 }
 
-.carousel-item img {
+img.d-block{
     -webkit-transform-origin: 100% 0;
     -moz-transform-origin: 100% 0;
     -ms-transform-origin: 100% 0;
@@ -141,41 +141,13 @@ active {
     width: 0%;
 }
 
-#scroll {
+.back-to-top {
     position: fixed;
-    right: 10px;
-    bottom: 10px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    background-color: #3498db;
-    text-indent: -9999px;
+    bottom: 25px;
+    right: 15px;
     display: none;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    border-radius: 60px;
-  
-  
 }
 
-#scroll span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -8px;
-    margin-top: -12px;
-    height: 0;
-    width: 0;
-    border: 8px solid transparent;
-    border-bottom-color: #ffffff;
-}
-
-#scroll:hover {
-    background-color: #e74c3c;
-    opacity: 1;
-    filter: "alpha(opacity=100)";
-    -ms-filter: "alpha(opacity=100)";
-}
 
 .navbar .navbar-collapse {
     text-align: center;
@@ -221,10 +193,11 @@ active {
 #footer {
     padding: 0px !important;
     margin: 0px !important;
-    background: #6c5ce7;
+    background: #103f6d;
     color: white;
     width: 100%;
     padding-top: 10px !important;
+    
 }
 
 .h4-responsive {
