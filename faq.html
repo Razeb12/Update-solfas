@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>The Solfas</title>
     <!-- MDB icon -->
-   <link rel="shortcut icon" href="img/art-1861482_3_150x100_1_32x32.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/art-1861482_3_150x100_1_32x32.ico" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -52,7 +52,7 @@
                             <a class="nav-link" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT US</a>
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@
         </nav>
         <div class="progress-bar fixed-top" id="myBar"></div>
     </div>
-    <a href="#" id="scroll" style="display: none;"><span></span></a>
+  
 
 
 
@@ -173,6 +173,39 @@
                     </div>
                 </div>
                 <!-- Accordion card -->
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading4">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse4"
+                            aria-expanded="false" aria-controls="collapse">
+                            <h5 class="mb-0 white-text text-uppercase font-thin">
+                                Where is it located? <i class="fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4"
+                        data-parent="#accordionEx7">
+                        <div class="card-body mb-1 rgba-grey-light white-text">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                                aspernatur
+                                aut
+                                odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                nesciunt.
+                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit, sed
+                                quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                                voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion card -->
             </div>
             <!--/.Accordion wrapper-->
 
@@ -225,8 +258,6 @@
         </div>
     </div>
 
-    </div>
-
 
 
 
@@ -270,21 +301,24 @@
         }
     </script>
     <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#scroll').fadeIn();
-                } else {
-                    $('#scroll').fadeOut();
-                }
+    
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 50) {
+                        $('#back-to-top').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-to-top').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 400);
+                    return false;
+                });
             });
-            $('#scroll').click(function () {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, 400);
-                return false;
-            });
-        });
+    </script>
     </script>
 </body>
 
